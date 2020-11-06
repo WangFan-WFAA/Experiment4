@@ -10,34 +10,35 @@ public class Test {
 		int i = 1;
 		
 		while(i<=2) {
-			System.out.println("µÚ"+i+"Î»");
+			System.out.println("ç¬¬"+i+"ä½");
 			Scanner console =new Scanner(System.in);
-			try {
-				System.out.println("ÇëÊäÈëÄúµÄÐÕÃû£º");
+				System.out.println("è¯·è¾“å…¥æ‚¨çš„å§“åï¼š");
 				String name1 = console.nextLine();
-				System.out.println("ÇëÊäÈëÄúµÄÐÔ±ð£º");
+				System.out.println("è¯·è¾“å…¥æ‚¨çš„æ€§åˆ«ï¼š");
 				String sex1 = console.nextLine();
-				System.out.println("ÇëÊäÈëÄúµÄÄêÁä£º");
+				System.out.println("è¯·è¾“å…¥æ‚¨çš„å¹´é¾„ï¼š");
 				int age1 = console.nextInt();
-				System.out.println("ÇëÊäÈëÄúµÄÑ§·Ñ£º");
+				System.out.println("è¯·è¾“å…¥æ‚¨çš„å­¦è´¹ï¼š");
 				double pay1 = console.nextDouble();
-				System.out.println("ÇëÊäÈëÄúµÄÔÂ¹¤×Ê£º");
+				System.out.println("è¯·è¾“å…¥æ‚¨çš„æœˆå·¥èµ„ï¼š");
 				double fee1 = console.nextDouble();
 				Doctor d = new Doctor(name1,sex1,age1,pay1,fee1);
-				System.out.println("ÇëÉÔºó");
-				System.out.println("ÄúµÄÑ§·ÑÎª£º"+d.getFee());
-				System.out.println("ÄúµÄÄêÊÕÈëÎª£º"+d.getFee()*12);
+				System.out.println("è¯·ç¨åŽ");
+				System.out.println("æ‚¨çš„å­¦è´¹ä¸ºï¼š"+d.getFee());
+				System.out.println("æ‚¨çš„å¹´æ”¶å…¥ä¸ºï¼š"+d.getFee()*12);
+			
+			try {	
 				
 				if((d.getPay()*12-d.getFee())<=36000) {
 					t = ((d.getPay()*12-d.getFee()))*n1-s1;
-							System.out.println(d+"ÄêÓ¦ÄÉË°¶îÎª£º"+t);
+							System.out.println(d+"å¹´åº”çº³ç¨Žé¢ä¸ºï¼š"+t);
 				}
 				if((d.getPay()*12-d.getFee())>=36000&&(d.getPay()*12-d.getFee())<=14400) {
 					t = ((d.getPay()*12-d.getFee()))*n2-s2;
-							System.out.println(d+"ÄêÓ¦ÄÉË°¶îÎª£º"+t);
+							System.out.println(d+"å¹´åº”çº³ç¨Žé¢ä¸ºï¼š"+t);
 				}
 			}catch(Exception e) {
-				System.out.println("Êý¾ÝÓÐÎóÇëÖØÊÔ£¡");
+				System.out.println("æ•°æ®æœ‰è¯¯è¯·é‡è¯•ï¼");
 			}
 			i++;
 		}
