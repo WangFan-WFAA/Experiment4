@@ -26,34 +26,34 @@
 ## 五、核心代码
 #### while(i<=2) {
 #### System.out.println("第"+i+"位");
-			Scanner console =new Scanner(System.in);
-				System.out.println("请输入您的姓名：");
-				String name1 = console.nextLine();
-				System.out.println("请输入您的性别：");
-				String sex1 = console.nextLine();
-				System.out.println("请输入您的年龄：");
-				int age1 = console.nextInt();
-				System.out.println("请输入您的学费：");
-				double pay1 = console.nextDouble();
-				System.out.println("请输入您的月工资：");
-				double fee1 = console.nextDouble();
-				Doctor d = new Doctor(name1,sex1,age1,pay1,fee1);
-				System.out.println("请稍后");
-				System.out.println("您的学费为："+d.getFee());
-				System.out.println("您的年收入为："+d.getFee()*12);
-				
-				try {
-				if((d.getPay()*12-d.getFee())<=36000) {
-					t = ((d.getPay()*12-d.getFee()))*n1-s1;
-							System.out.println(d+"年应纳税额为："+t);
-				}
-				if((d.getPay()*12-d.getFee())>=36000&&(d.getPay()*12-d.getFee())<=14400) {
-					t = ((d.getPay()*12-d.getFee()))*n2-s2;
-							System.out.println(d+"年应纳税额为："+t);
-				}
-			}catch(Exception e) {
-				System.out.println("数据有误请重试！");
-			}
+#### 			Scanner console =new Scanner(System.in);
+#### 				System.out.println("请输入您的姓名：");
+#### 				String name1 = console.nextLine();
+#### 				System.out.println("请输入您的性别：");
+#### 				String sex1 = console.nextLine();
+#### 				System.out.println("请输入您的年龄：");
+#### 				int age1 = console.nextInt();
+#### 				System.out.println("请输入您的学费：");
+#### 				double pay1 = console.nextDouble();
+#### 				System.out.println("请输入您的月工资：");
+#### 				double fee1 = console.nextDouble();
+#### 				Doctor d = new Doctor(name1,sex1,age1,pay1,fee1);
+#### 				System.out.println("请稍后");
+#### 				System.out.println("您的学费为："+d.getFee());
+#### 				System.out.println("您的年收入为："+d.getFee()*12);
+#### 				
+#### 				try {
+#### 				if((d.getPay()*12-d.getFee())<=36000) {
+#### 					t = ((d.getPay()*12-d.getFee()))*n1-s1;
+#### 							System.out.println(d+"年应纳税额为："+t);
+#### 				}
+#### 				if((d.getPay()*12-d.getFee())>=36000&&(d.getPay()*12-d.getFee())<=14400) {
+#### 					t = ((d.getPay()*12-d.getFee()))*n2-s2;
+#### 							System.out.println(d+"年应纳税额为："+t);
+#### 				}
+#### 			}catch(Exception e) {
+#### 				System.out.println("数据有误请重试！");
+#### 			}
       
 ## 六、运行结果
 ![i](https://github.com/WangFan-WFAA/Experiment4/blob/main/%E5%AE%9E%E9%AA%8C%E5%9B%9B%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png)
